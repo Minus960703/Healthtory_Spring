@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+.letter_section{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.letter_content{
+	margin-top: 8.5vh;
+	width: 100%;
+	height: 91.5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ===================================== 메뉴 패널 ===================================== */
+.letter_menu_panel{
+	width: 13vw; height: 100%;
+	background-color: #74b9ff;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.letter_menu_panel>.top{
+	width: 100%; height: 50%;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	background-color: white;
+}
+.letter_menu_panel>.top>div{
+	width: 100%; height: 50%;
+	color: #0984e3; font-weight: bold; font-size: 25px;
+	display: flex; justify-content: center; align-items: center;
+	cursor: pointer;
+	border-bottom: 2px solid black;
+}
+.letter_menu_panel>.top>.selected{background-color: #0984e3; color: white;}
+.letter_menu_panel>.bottom{width: 100%; height: 50%; display: flex; justify-content: center; align-items: flex-end; padding-bottom: 5vh;}
+
+
+/* ===================================== 내용 패널 ===================================== */
+.letter_list_panel{
+	width: 87vw; height: 100%;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	background-color: #e2e2e2;
+	border-left: 2px solid black;
+}
+.letter_list_header{
+	width: 100%; height: 10vh;
+	display: flex; justify-content: space-between; align-items: center;
+	padding: 0 1vw;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: white;
+}
+.letter_list_header>span{font-size: 25px; font-weight: bold;}
+.letter_list_main{width: 100%; height: 81.5vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.letter_list_footer{width: 100%; height: 10vh; display: flex; justify-content: center; align-items: center;}
+.letter_list_footer>span{font-weight: bold;}
+
+/* 각 목록 */
+.letter_list_line_start, .letter_list_line{
+	width: 85%;
+	height: 9vh;
+	min-height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.letter_list_line_start{
+	border: 3px solid black;
+	background-color: #a4b0be;
+}
+
+.letter_list_line{
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	background-color: white;
+}
+
+.letter_list_line_start>.content, .letter_list_line_start>.user, .letter_list_line_start>.date{font-weight: bold;}
+
+.letter_list_line_start>.content, .letter_list_line>.content{
+	width: 55%; height: 100%;
+}
+.letter_list_line>.content{display: flex; justify-content: flex-start; align-items: center; padding-left: 1vw;}
+.letter_list_line_start>.content{display: flex; justify-content: center; align-items: center;}
+
+.letter_list_line>.content>a{text-overflow:ellipsis; overflow: hidden; white-space: nowrap;}
+.letter_list_line>.content>a:link { color: #4b70fd; }
+.letter_list_line_start>.user, .letter_list_line>.user{
+	width: 25%; height: 100%;
+	border-left: 3px solid black; border-right: 3px solid black;
+	display: flex; justify-content: center; align-items: center;
+}
+.letter_list_line>.user>span{text-overflow:ellipsis; overflow: hidden; white-space: nowrap;}
+.letter_list_line_start>.date, .letter_list_line>.date{
+	width: 20%; height: 100%;
+	display: flex; justify-content: center; align-items: center;
+}
+
+/* ===================================== 검색용 css ===================================== */
+.search_box{width: 28%; height: 50px; border: 2px solid #63C1AE; background-color: #63C1AE;}
+.searchForm{width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.search_box_text{width: 72%;  border: 1px solid black;}
+.search_box_text:focus{outline: #63C1AE;}
+.searchForm>input{ height: 98%; border-radius: none; background-color: white; border: 1px solid #63C1AE;}
+.search_box_button{width: 28%; height: 100%; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+.search_box_button>i{font-size: 20px; color: white;}
+
+/* ===================================== 글 쓰기 페이지로 이동 ===================================== */
+.go_write{cursor: pointer; font-weight: bold; font-size: 20px;}
+
+/* ===================================== write 페이지용 css ===================================== */
+.letter_content_ver_write{
+	margin-top: 8.5vh;
+	width: 100%;
+	height: 91.5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.letter_write_main{width: 100%; height: 76.5vh;}
+.letter_write_main>form{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
+
+.letter_write_title{width: 80%; height: 10vh; border: 3px solid black; display: flex; justify-content: center; align-items: center; background-color: lightgray; }
+.letter_write_title>div{width: 20%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.letter_write_title>.left{ border-right: 3px solid black; }
+.letter_write_title>.right{ border-left: 3px solid black; }
+.letter_write_title>.right>input{width: 70%; height: 70%; border-radius: 1em;}
+.letter_write_title>.right>input:focus{outline:none;}
+.letter_write_title>input{width: 60%; height: 100%; border: none; background-color: white; font-size: 17px;}
+.letter_write_title>input:focus{outline: none;}
+.letter_write_title>input::placeholder{padding-left: 1vw;}
+
+.letter_write_content{width: 80%; height: 60vh; border: 3px solid black; display: flex; justify-content: center; align-items: center;  background-color: lightgray; }
+.letter_write_content>div{width: 20%; height: 101%; border-right: 3px solid black; display: flex; justify-content: center; align-items: center;}
+.letter_write_content>textarea{width: 80%; height: 100%; resize: none; border: none;  background-color: white; font-size: 17px;}
+.letter_write_content>textarea:focus{outline: none;}
+
+.letter_write_footer{width: 100%; height: 15vh; display: flex; justify-content: center; align-items: center;}
+.letter_write_footer>div{width: 80%; height: 70px; display: flex; justify-content: flex-start; align-items: center;}
+.letter_write_footer>div>button, .letter_write_footer>div>a>button {width: 200px; height: 70px; margin-right: 1vw; border-radius: 2em; background-color: lightgray; }
+.letter_write_footer>div>button:focus, .letter_write_footer>div>a>button:focus{outline:none;}
+
+/* ===================================== view 페이지용 css ===================================== */
+.letter_content_ver_view{
+	margin-top: 8.5vh;
+	width: 100%;
+	height: 91.5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.letter_view_title{width: 80%; height: 10vh; border: 3px solid black; display: flex; justify-content: center; align-items: center; background-color: lightgray; }
+.letter_view_title>div{width: 20%; height: 100%; display: flex; justify-content: center; align-items: center; border-right: 3px solid black;}
+.letter_view_title>input{width: 80%; height: 100%; border: none; background-color: white; font-size: 17px;}
+.letter_view_title>input:focus{outline: none;}
+.letter_view_title>input::placeholder{padding-left: 1vw;}
+
+/* ============================================= 미디어 쿼리 =============================================  */
+@media screen and (max-width: 1000px) {
+  .search_box{width: 35%;}
+}
+
+@media screen and (max-width: 750px) {
+  .search_box{width: 42%;}
+  .go_write{font-size: 15px; white-space: nowrap;}
+  .letter_menu_panel>.top>div{padding-left: 1.5vw;}
+  .letter_list_line>.user{padding-left: 1vw;}
+}

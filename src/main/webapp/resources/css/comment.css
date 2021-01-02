@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+html {width: 100vw; height: 100vh;}
+body{width: 100%; height: 100%;}
+
+/*================================================= 댓글 form =================================================*/
+
+.comment_form{
+	width: 90%; height: 200px;
+	margin: 20px auto 0 auto;
+	border: 2px solid #8395a7;
+	display: flex; justify-content: space-around; align-items: center;
+	flex-wrap: wrap;
+}
+.comment_form_header{
+	width: 100%; height: 50px;
+	display: flex; justify-content: flex-start; align-items: center;
+	padding-left: 5px;
+}
+.comment_form_header>span{font-weight: bold;}
+
+.comment_text{width:80%; height: 50%; border: 1px solid #c8d6e5; resize: none;}
+.comment_submit{width:15%; height: 40%; border: 1px solid #c8d6e5; font-size: 20px;}
+
+/*================================================= 댓글 목록 =================================================*/
+
+.comments{
+	width: 83%; height: auto;
+	margin: 30px auto 0 auto;
+	border: 2px solid #c8d6e5;
+}
+.comments>header{width: 100%; height: 40px; display: flex; justify-content: flex-start; align-items: center;}
+.comments>header>span{margin-left: 2.5%; font-weight: bold;}
+
+.comments>main{width: 100%; height: 120px; display: flex; justify-content: center; align-items: center;}
+.comments>main>div{width:95%; height: 85%; border: 1px solid #c8d6e5;}
+
+.comments>footer{width: 100%; height: 40px; display: flex; justify-content: flex-start; align-items: center; padding-left: 5px;}
+.comments>footer>span{margin-left: 2.5%; font-weight: bold;}
+
+/* 댓글 없을 때 */
+.comment_none{width: 100%; height: 50px; margin: 30px auto 0 auto; padding-left: 5px;}
+
+/*================================================= 여백 공간 =================================================*/
+
+/* 화면 잘리는 거 방지용 */
+.comment_blank{width: 100%; height: 50px;}
+
+/*================================================= 미디어 쿼리 =================================================*/
+
+@media screen and (max-width: 700px) {
+			.comment_form{width: 80%;}
+			.comment_text{width: 70%;}
+			.comment_submit{width: 12%; height: 20%;}
+			select{width: 25%;}
+}
+
+@media screen and (max-width: 628px) {
+			select{width: 33%;}
+}
