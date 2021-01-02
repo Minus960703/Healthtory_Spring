@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* 공통 부분 */
+@import "nav.css";
+@import "nav_workout.css";
+
+/* 각 페이지의 css */
+@import "home.css";
+@import "workout.css";
+@import "letter.css";
+@import "login.css";
+@import "join.css";
+@import "community.css";
+@import "comment.css";
+@import "mypage.css";
+@import "master.css";
+
+/* 공통 태그의 css */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /*-ms-overflow-style: none;*/
+}
+/*::-webkit-scrollbar { display: none; }*/
+
+body{width: 100%; height: auto;}
+
+.img_cover{
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,258 @@
+.home_section{
+	width: 100vw;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.home_content{
+	width: 100%;
+	height: auto;
+	min-height: 91.5vh;
+	margin-top: 8.5vh;
+	padding-top: 10vh;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	
+	/*background-color: #aeb5bd;*/
+}
+
+/*=============================== 아이콘 ===============================*/
+.fa-eye, .fa-comment-alt{color: black; font-size: 20px; font-weight: bold;}
+.fa-medal.gold{color: #ffbd1b;}
+.fa-medal.silver{color: #bec2cb;}
+.fa-medal.bronze{color: #b08d57;}
+
+/*=============================== 운동 게시판 소개 ===============================*/
+.home_workout_panel{
+	width: 100%; height: auto;
+	display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+	margin-bottom: 10vh;
+}
+.home_workout_panel>header{
+	width: 100%; height: 10vh; min-height: 100px;
+	display: flex; justify-content: space-between; align-items: flex-end;
+	padding: 0 2vw 15px 2vw;
+	font-size: 20px; font-weight: bold;
+	border-bottom: 5px solid black;
+	
+}
+.home_workout_panel>header>header>span:last-child{
+	cursor: pointer;
+}
+.home_workout_panel>main{
+	width: 100%; height: 55vh; min-height: 500px;
+	display: flex; justify-content: space-around; align-items: center;
+	margin-top: 5vh;
+}
+/*=============================== 몸짱 게시판 랭킹 ===============================*/
+.home_screen_rank_panel{
+	width: 100%; height: auto;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	margin-bottom: 10vh;
+	background-color: white;
+}
+.home_screen_rank_panel>header{
+	width: 100%; height: 10vh; min-height: 100px;
+	display: flex; justify-content: space-between; align-items: flex-end;
+	padding: 0 2vw 15px 2vw;
+	font-size: 20px; font-weight: bold;
+	border-bottom: 5px solid black;
+}
+.home_screen_rank_panel>header>span:last-child{
+	cursor: pointer;
+}
+.home_screen_rank_panel>main{
+	width: 100%; height: 75vh; min-height: 500px;
+	display: flex; justify-content: space-around; align-items: center;
+}
+.home_screen_rank_panel>main>.box{
+	width: 27%; height: 90%; min-width: 320px; min-height: 400px;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.home_screen_rank_panel>main>.box>.rank{
+	width: 100%; height: 13%;
+	display: flex; justify-content: flex-start; align-items: center;
+	padding-left: 1vw;
+	font-size: 27px; font-weight: bold;
+	border-bottom: 1px solid black;
+}
+.home_screen_rank_panel>main>.box>header{
+	width: 100%; height: 12%;
+	display: flex; justify-content: flex-start; align-items: center;
+	padding-left: 1vw;
+	border-bottom: 1px solid black;
+	font-size: 20px; font-weight: bold;
+	background-color: #eeeeee;
+}
+.home_screen_rank_panel>main>.box>header>span{
+	text-overflow:ellipsis; overflow: hidden; white-space: nowrap;
+}
+.home_screen_rank_panel>main>.box>main{
+	width: 100%; height: 63%;
+	display: flex; justify-content: center; align-items: center;
+	border-bottom: 1px solid black;
+	background-color: gray;
+}
+.home_screen_rank_panel>main>.box>main>img{
+	width: 100%; height: 100%;
+}
+.home_screen_rank_panel>main>.box>footer{
+	width: 100%; height: 12%;
+	display: flex; justify-content: space-between; align-items: center;
+	padding: 0 1vw;
+	background-color: #eeeeee;
+}
+
+/*=============================== 홍보 게시글 리스트 ===============================*/
+.home_promotion_list_panel{
+	width: 100%; height: auto;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	margin-bottom: 10vh;
+	background-color: white;
+}
+.home_promotion_list_panel>header{
+	width: 100%; height: 7vh; min-height: 100px;
+	display: flex; justify-content: space-between; align-items: flex-end;
+	padding: 0 2vw 15px 2vw;
+	font-size: 20px; font-weight: bold;
+	border-bottom: 5px solid black;
+}
+.home_promotion_list_panel>header>span:last-child{
+	cursor: pointer;
+}
+.home_promotion_list_panel>main{
+	width: 100%; height: 75vh; min-height: 500px;
+	display: flex; justify-content: space-around; align-items: center;
+}
+.home_promotion_list_panel>main>.box{
+	width: 27%; height: 90%; min-width: 320px; min-height: 400px;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.home_promotion_list_panel>main>.box>header{
+	width: 100%; height: 17%;
+	display: flex; justify-content: flex-start; align-items: center;
+	padding-left: 1vw;
+	border-bottom: 1px solid black;
+	font-size: 20px; font-weight: bold;
+	background-color: #eeeeee;
+}
+.home_promotion_list_panel>main>.box>header>span{
+	text-overflow:ellipsis; overflow: hidden; white-space: nowrap;
+}
+.home_promotion_list_panel>main>.box>main{
+	width: 100%; height: 68%;
+	display: flex; justify-content: center; align-items: center;
+	border-bottom: 1px solid black;
+	background-color: gray;
+}
+.home_promotion_list_panel>main>.box>main>img{
+	width: 100%; height: 100%;
+}
+.home_promotion_list_panel>main>.box>footer{
+	width: 100%; height: 15%;
+	display: flex; justify-content: space-between; align-items: center;
+	padding: 0 1vw;
+	background-color: #eeeeee;
+}
+
+/*=============================== 개발자 소개 ===============================*/
+.home_programmer_intro_panel{
+	width: 100%; height: auto; min-height: 50px;
+	display: flex; justify-content: space-around; align-items: center;
+	padding: 20px 0;
+	background-color: #2c3e50;
+	color: white; font-size: 20px;
+}
+
+/* ============================================= 미디어 쿼리 =============================================  */
+
+@media screen and (max-width: 1150px) {
+	/* 사이트 소개  */
+	.home_project_intro_panel>span{
+	display: flex; flex-direction: column; align-items: center;
+		width: 100%; height: auto;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	/* 몸짱 게시판 랭킹 */
+	 .home_screen_rank_panel>main{height: auto; flex-direction: column; padding-top: 10vh;}
+	 .home_screen_rank_panel>main>.box{
+	 	width: 50%; height: 65vh; min-width: 320px; min-height: 500px;
+	 	margin-bottom: 10vh;
+	 	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	 }
+	 /* 동호회 홍보 게시판 */
+	 .home_promotion_list_panel>main{height: auto; flex-direction: column; padding-top: 10vh;}
+	 .home_promotion_list_panel>main>.box{
+	 	width: 50%; height: 65vh; min-width: 320px; min-height: 500px;
+	 	margin-bottom: 10vh;
+	 	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	 }
+}
+
+@media screen and (max-width: 850px) {
+	/* 몸짱 게시판 랭킹 */
+	 .home_screen_rank_panel>main>.box{
+	 	width: 60%;
+	 }
+	 /* 동호회 홍보 게시판 */
+	 .home_promotion_list_panel>main>.box{
+	 	width: 60%;
+	 }
+}
+
+@media screen and (max-width: 750px) {
+	/* 개발자 소개 */
+	.home_programmer_intro_panel{
+		display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+	}
+	/*각 패널의 헤더*/
+	.home_workout_panel>header, .home_screen_rank_panel>header,.home_promotion_list_panel>header{
+		padding: 0 3vw 15px 2vw;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	/* 몸짱 게시판 랭킹 */
+	 .home_screen_rank_panel>main>.box{
+	 	width: 70%;
+	 }
+	 /* 동호회 홍보 게시판 */
+	 .home_promotion_list_panel>main>.box{
+	 	width: 70%;
+	 }
+	/*각 패널의 헤더*/
+	.home_workout_panel>header, .home_screen_rank_panel>header,.home_promotion_list_panel>header{
+		padding: 0 3.5vw 15px 2vw;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	/* 사이트 소개 */
+	.home_project_intro_panel{
+		font-size: 27px;
+	}
+	
+	/* 개발자 소개 */
+	.home_programmer_intro_panel>span>.hide{
+		display: none;
+	}
+	.home_programmer_intro_panel>span:last-child {
+		display: flex; flex-direction: column; align-items: center;
+		width: 100%; height: auto;
+	}
+}

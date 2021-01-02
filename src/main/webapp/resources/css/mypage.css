@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+.mypage_section{
+	width: 100vw;
+	height: auto;
+	min-height: 91.5vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.mypage_content{
+	margin-top: 8.5vh;
+	width: 100vw; height: auto;
+	min-height: 91.5vh;
+}
+
+/* ===================================== 메뉴 패널 ===================================== */
+aside{
+	width: 17vw; height: 91.5vh;
+	display: flex; flex-direction: column; justify-content: center; align-items: center;
+	position: fixed; left: 0; top: 8.5vh;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: white;
+}
+aside>div{width: 100%; height: 33.3%; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 20px; cursor: pointer;}
+aside>.postList{border-top: 2px solid black; border-bottom: 2px solid black;}
+aside>.selected{background-color: #0984e3; color: white;}
+
+/* ===================================== 개인정보 변경 ===================================== */
+
+.mypage_info_panel{
+	width: 83vw; height: 91.5vh;
+	position: absolute; right: 0; top: 8.5vh;
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+}
+
+.mypage_info_panel>header{
+	width: 100%; height: 12vh;
+	border-bottom: 5px solid black;
+	display: flex; justify-content: flex-start; align-items: flex-end;
+	padding: 0 0 1vw 1.5vw;
+	font-weight: bold; font-size: 27px;
+}
+.mypage_info_panel>main{width: 100%; height: 64.5vh;}
+.mypage_info_panel>main>form{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
+.mypage_info_line{width: 90%;; height: 20%; display: flex; justify-content: center; align-items: center;}
+.mypage_info_line>div{width: 25%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.mypage_info_line>input{width: 75%; height: 100%;}
+.mypage_info_line>input:focus{outline: none;}
+
+.mypage_info_panel>footer{width: 100%; height: 15vh; display: flex; justify-content: center; align-items: center;}
+.mypage_info_panel>footer>div{width: 90%; height: 70px;}
+.mypage_info_panel>footer>div>button{width: 200px; height: 70px; margin-right: 1vw; border-radius: 2em; background-color: lightgray; }
+/* ===================================== 게시글 목록 및 댓글 목록 ===================================== */
+
+/* 내용 패널 */
+.mypage_list_panel{
+	width: 83vw; height: auto;
+	min-height: 91.5vh;
+	position: absolute; right: 0; top: 8.5vh;
+	display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+	background-color: #EEEEEE;
+}
+
+/* 각 목록 */
+.mypage_list_line_start, .mypage_list_line, .mypage_list_line_board{
+	width: 85%;
+	height: 9vh;
+	min-height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.mypage_list_line_start{
+	border: 3px solid black;
+	background-color: #a4b0be;
+	margin-top: 5vh;
+}
+
+.mypage_list_line{
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	background-color: white;
+}
+
+.mypage_list_line_board{
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	background-color: #dadfe4;
+	font-weight: bold;
+}
+
+.mypage_list_line_start>div, .mypage_list_line>div{display: flex; justify-content: center; align-items: center;}
+
+/* 각 항목 - 게시글용 */
+.mypage_list_line_start>.title, .mypage_list_line>.title{ width: 55%; height: 100%; border-right: 3px solid black;}
+.mypage_list_line_start>.date, .mypage_list_line>.date{ width: 28%; height: 100%; border-right: 3px solid black;}
+.mypage_list_line_start>.views, .mypage_list_line>.views{ width: 17%; height: 100%; }
+
+/* 각 항목 - 게시글용 */
+.mypage_list_line_start>.comment_content, .mypage_list_line>.comment_content{ width: 75%; height: 100%; border-right: 3px solid black;}
+.mypage_list_line_start>.comment_date, .mypage_list_line>.comment_date{ width: 25%; height: 100%;}
+
+/* 항목의 종류에 대한 명확한 시각화 */
+.mypage_list_line_start>div>span{font-weight: bold; font-size: 17px;}
+
+/* 잘림 방지 */
+.mypage_list_line:last-child {margin-bottom: 5vh;}
