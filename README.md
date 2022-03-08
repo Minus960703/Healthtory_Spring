@@ -6,4 +6,13 @@
 # 사용 방법
 
 ## 1. 홈
+> 사용자가 관심있는 부위를 드래그, 슬라이드 하여 고를 수 있고, 고를 시 해당 관련 영상 게시판으로 이동합니다.
 <img src="https://images.velog.io/images/cjw960703/post/6045ec2a-5ca0-4dbf-8f3a-0c5f2be08f85/healthtory.png">
+
+## 2. 운동게시판
+> 운동게시판 탭 클릭시 운동영상 관련 게시판으로 이동합니다.
+<img src="https://images.velog.io/images/cjw960703/post/065753b1-b3f6-4c62-b4c3-389b793431b8/%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A9%E1%86%BC%E1%84%80%E1%85%A6%E1%84%89%E1%85%B5%E1%84%91%E1%85%A1%E1%86%AB.png">
+
+## 3. 메뉴
+> 운동게시판 탭에서, 메뉴 클릭시 메뉴창이 보입니다.
+<img src="https://images.velog.io/images/cjw960703/post/8e69e00b-6d24-4ec3-9aaf-d0b24b7f853c/%E1%84%92%E1%85%A6%E1%86%AF%E1%84%89%E1%85%B3%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%86%E1%85%A6%E1%84%82%E1%85%B2.png">
