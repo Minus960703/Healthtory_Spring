@@ -49,7 +49,7 @@
 <img src="https://images.velog.io/images/cjw960703/post/4c95cc60-6a04-4704-add1-a54c3f50e7d3/%E1%84%8D%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%B5.png">
 
 # Project Structure
-> MVC 구조로 개발했으며, 저는 MVC 구조 설계, DB 설계, JAVA 소스 구현을 담당했습니다.
+> MVC 구조로 개발했으며, 저는 MVC 구조 설계, DB 설계, JAVA 소스 구현을 담당했습니다.<br>
 > 사용한 기술스택은 다음과 같습니다. • Spring • MySQL • JavaScript, JQuery • Tomcat 8.5
 > 개발인원 : 2, 개발기간 : 2020-11-20 ~ 2020-12-15
 
